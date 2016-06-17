@@ -86,12 +86,12 @@ Each URL is in the form _file:///path/to/spot/_, and can be converted to a
 `DirectoryEntry` using `window.resolveLocalFileSystemURL()`.
 
 * `cordova.file.applicationDirectory` - Read-only directory where the application
-  is installed. (_iOS_, _Android_, _BlackBerry 10_, _OSX_, _windows_)
+  is installed. (_iOS_, _Android_, _BlackBerry 10_, _macOS_, _windows_)
 
 * `cordova.file.applicationStorageDirectory` - Root directory of the application's
   sandbox; on iOS & windows this location is read-only (but specific subdirectories [like
   `/Documents` on iOS or `/localState` on windows] are read-write). All data contained within
-  is private to the app. (_iOS_, _Android_, _BlackBerry 10_, _OSX_)
+  is private to the app. (_iOS_, _Android_, _BlackBerry 10_, _macOS_)
 
 * `cordova.file.dataDirectory` - Persistent and private data storage within the
   application's sandbox using internal memory (on Android, if you need to use
@@ -101,7 +101,7 @@ Each URL is in the form _file:///path/to/spot/_, and can be converted to a
 * `cordova.file.cacheDirectory` -  Directory for cached data files or any files
   that your app can re-create easily. The OS may delete these files when the device
   runs low on storage, nevertheless, apps should not rely on the OS to delete files
-  in here. (_iOS_, _Android_, _BlackBerry 10_, _OSX_, _windows_)
+  in here. (_iOS_, _Android_, _BlackBerry 10_, _macOS_, _windows_)
 
 * `cordova.file.externalApplicationStorageDirectory` - Application space on
   external storage. (_Android_)
@@ -116,13 +116,13 @@ Each URL is in the form _file:///path/to/spot/_, and can be converted to a
 
 * `cordova.file.tempDirectory` - Temp directory that the OS can clear at will. Do not
   rely on the OS to clear this directory; your app should always remove files as
-  applicable. (_iOS_, _OSX_, _windows_)
+  applicable. (_iOS_, _macOS_, _windows_)
 
 * `cordova.file.syncedDataDirectory` - Holds app-specific files that should be synced
   (e.g. to iCloud). (_iOS_, _windows_)
 
 * `cordova.file.documentsDirectory` - Files private to the app, but that are meaningful
-  to other application (e.g. Office files). Note that for _OSX_ this is the user's `~/Documents` directory. (_iOS_, _OSX_)
+  to other application (e.g. Office files). Note that for _macOS_ this is the user's `~/Documents` directory. (_iOS_, _macOS_)
 
 * `cordova.file.sharedDirectory` - Files globally available to all applications (_BlackBerry 10_)
 
